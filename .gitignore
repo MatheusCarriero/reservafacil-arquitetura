@@ -1,0 +1,18 @@
+# Ambiente virtual
+.venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Ferramentas de qualidade
+.pytest_cache/
+.ruff_cache/
+
+# Banco de dados local
+*.db
+*.sqlite3
+
+# Configuracoes locais
+.env
+.vscode/
