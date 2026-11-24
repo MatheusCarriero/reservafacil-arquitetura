@@ -18,6 +18,8 @@ class PublicadorEventosEmMemoria:
             try:
                 observador.notificar(evento)
             except Exception:
+                # Captura ampla de propósito: um observador com defeito não
+                # pode impedir os demais nem quebrar quem publicou o evento.
                 logger.exception(
                     "Falha ao notificar observador %s para o evento %s",
                     type(observador).__name__,
